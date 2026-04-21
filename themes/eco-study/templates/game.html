@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}eco study{% endblock %}
+
+{% block content %}
+<header>
+  <h1>eco study</h1>
+  <span id="impact-label" class="low">low impact</span>
+  <span id="impact-score">— score: 0</span>
+  <span id="audio-loading">[ loading audio ]</span>
+  <span id="audio-status">[ drag an item to enable audio ]</span>
+</header>
+
+<main>
+  <aside id="sidebar"></aside>
+  <div id="canvas-wrap">
+    <canvas id="game-canvas"></canvas>
+    <canvas id="light-canvas"></canvas>
+  </div>
+</main>
+
+<div id="drag-ghost"></div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ SITEURL }}/theme/js/audio.js"></script>
+<script src="{{ SITEURL }}/theme/js/game.js"></script>
+{% endblock %}
