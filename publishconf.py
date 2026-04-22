@@ -3,5 +3,5 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://your-domain.com'
+SITEURL = 'https://joyyy-deng.github.io/ecoixdproject'
 RELATIVE_URLS = False
